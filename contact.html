@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Photo/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="Photo/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Photo/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>TC Bookstore - Contact page</title>
+</head>
+<body>
+    <header>
+
+        <div class="video-bg">
+            <video autoplay muted loop id="bg-video">
+                <source src="Video/cherryblossoms.mp4" type="video/mp4">
+               
+            </video>
+        </div>
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Photo/IMG_1191.png" alt="Logo">
+                <h1>TC Bookstore</h1>
+            </div>
+            <div class="mobile-nav-icon">☰</div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Fiction.html">Fiction</a></li>
+                <li><a href="Non-Fiction.html">Non-Fiction</a></li>
+                <li><a href="Shopping-cart.html">Your cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-page">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="contact-purpose">Contact Purpose:</label>
+                    <select id="contact-purpose" name="contact-purpose" required>
+                        <option value="">Select an option</option>
+                        <option value="sell">I want to sell books</option>
+                        <option value="buy">I want to buy books</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <span>Contact Preference:</span>
+                    <label for="email-preference"><input type="checkbox" id="email-preference" name="contact-preference[]" value="email"> By email</label>
+                    <label for="phone-preference"><input type="checkbox" id="phone-preference" name="contact-preference[]" value="phone"> By phone</label>
+                </div>
+
+                <div class="form-group">
+                    <span>Receive Weekly Newsletter:</span>
+                    <label for="newsletter-yes"><input type="radio" id="newsletter-yes" name="newsletter" value="yes" checked> Yes</label>
+                    <label for="newsletter-no"><input type="radio" id="newsletter-no" name="newsletter" value="no"> No</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="extra-notes">Extra Notes:</label>
+                    <textarea id="extra-notes" name="extra-notes"></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="Policy.html">Privacy Policy</a></li>
+                <li><a href="Terms.html">Terms</a></li>
+                <li><a href="Copyright.html">Copyright</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
